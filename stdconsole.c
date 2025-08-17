@@ -11,7 +11,7 @@ void print_char(char character, unsigned char attribute, int posX, int posY) {
 
 
                                 //for ground and background attribute 
-void print_string(char* string, unsigned char attribute, int posX, int posY){  //works but you cant but a strign as a agr. please use print_string(msg[] )
+void print_string(char* string, unsigned char attribute, int posX, int posY){  //works but you cant put a strign as a agr. please use a char array such as 'msg[] = "Hello world"'
     int i = 0;                                                                 
 
     while (string[i] != '\0') {
@@ -19,15 +19,5 @@ void print_string(char* string, unsigned char attribute, int posX, int posY){  /
         i++;
     }
 
-}
-
-//convert byte to hex string 
-
-static char* byte_to_hex(uint8_t b, char* buffer) {
-    const char* hex_chars = "0123456789ABCDEF";
-    buffer[0] = hex_chars[(b >> 4) & 0x0F];
-    buffer[1] = hex_chars[b & 0x0F];
-    buffer[2] = '\0';
-    return buffer;
 }
 
