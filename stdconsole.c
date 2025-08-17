@@ -10,8 +10,15 @@ void print_char(char character, unsigned char attribute, int posX, int posY) {
 }
 
 
-                                //for ground and background attribute 
+                                
 void print_string(char* string, unsigned char attribute, int posX, int posY){  //works but you cant put a strign as a agr. please use a char array such as 'msg[] = "Hello world"'
+   //attribute - forground and background attribute:
+            //bits 0-3 - text color 
+            //bits 4-6 - background color 
+            //recomend 0x07 for basic white text black background.
+            
+
+   
     int i = 0;                                                                 
 
     while (string[i] != '\0') {
