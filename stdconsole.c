@@ -28,3 +28,13 @@ void print_string(char* string, unsigned char attribute, int posX, int posY){  /
 
 }
 
+
+void clear_screen(){
+    unsigned int i;
+
+    for (i = 0; i < VGA_COLS* VGA_ROWS; i++) {
+        vga[i] = (0x07 << 8) | 0x20;  // writting the ascii symbol space to clear the screen (genius)
+    }
+
+}
+
