@@ -7,7 +7,7 @@
 #define VGA_ROWS 25 // y 
 
 
-#define VGA_ADDRESS 0xB8000 //location of 
+#define VGA_ADDRESS 0xB8000 
 static unsigned short* const vga = (unsigned short*)VGA_ADDRESS;
 
 
