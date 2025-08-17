@@ -15,4 +15,5 @@ static unsigned short* const vga = (unsigned short*)VGA_ADDRESS;
 
 void print_string(char* string, unsigned char attribute, int posX, int posY);
 void print_char(char character, unsigned char attribute, int posX, int posY);
+void clear_screen();
 #endif
